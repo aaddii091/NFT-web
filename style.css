@@ -377,7 +377,7 @@ ul {
   width: 100%;
 }
 .desktop-ban {
-  background: url(../images/cards/section-join-community.png) no-repeat;
+  background: url("../images/cards/section-join-community.png") no-repeat;
   background-size: cover;
   width: 100%;
   border-radius: 20px;
@@ -515,7 +515,7 @@ ul {
     transform: scale(1.5);
   }
   .desktop-ban {
-    background: url(../images/cards/section-join-community2.png) no-repeat;
+    background: url("../images/cards/section-join-community2.png") no-repeat;
     background-size: cover;
     width: 100%;
     border-radius: 20px;
@@ -553,7 +553,7 @@ ul {
     display: none !important;
   }
   .desktop-ban {
-    background: url(../images/cards/section-join-community2.png) no-repeat;
+    background: url("../images/cards/section-join-community2.png") no-repeat;
     background-size: cover;
     width: 100%;
     border-radius: 20px;

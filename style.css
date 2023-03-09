@@ -74,10 +74,71 @@ ul {
 .part1 {
   width: 100%;
 }
+.dream-nft {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: white;
+  font-size: 3vw;
+}
+.dream-nft span {
+  background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.des {
+  display: flex;
+  justify-content: flex-start;
+  margin: 2vw 10px;
+  align-items: center;
+  width: 100%;
+}
+.des-ratio img {
+  max-width: 8vw;
+  margin: 10px 10px 10px 0px;
+}
+
+.des p {
+  /* word-wrap: break-word; */
+  width: auto;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5vw;
+  color: #ffffff;
+  max-width: 35vw;
+}
+.artist-like-2 {
+  display: flex;
+  /* justify-content: center; */
+  margin-top: 3vw;
+}
+.art {
+  margin: 5px 20px;
+}
+.art h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 1.2vw;
+  margin-bottom: 5px;
+}
+.art h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 2.3vw;
+}
 .part1-display {
   display: flex;
   justify-content: space-between;
   margin: 6% 5%;
+  align-items: center;
   width: 80vw;
 }
 .part1-img {
@@ -148,9 +209,9 @@ ul {
   border-radius: 20px;
   background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
   border: 0px;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   /* font-size: 1.2vw; */
   font-size: 2vw;
   /* line-height: 19px; */
@@ -324,7 +385,7 @@ ul {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  margin: 10px;
+  margin: 10px auto;
 }
 .emp-text {
   display: flex;
@@ -443,32 +504,73 @@ ul {
 }
 /* MEDIA QUERY */
 @media only screen and (max-width: 475px) {
+  .dream-nft {
+    font-size: 7vw;
+  }
   .part1-display {
-    flex-direction: column !important;
-    align-items: center;
-  }
-  .part1-text h1 {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
   }
-  .NFTtext {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+  .discover-btn-display {
+    display: flex;
   }
-  .description {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin-top: 0px !important;
-    margin-bottom: 40px;
-    transform: scale(1.5);
+  .discover-btn {
+    padding: 10px 40px;
+    min-height: 30px;
+    min-width: 100px;
+    margin: 0px auto;
+    border-radius: 15px;
+    border: 0px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "Inter";
+    color: whitesmoke;
+    font-style: normal;
+    background-color: rgb(66, 115, 250);
   }
-  .des-desktop {
-    display: none !important;
+  .des h6 {
+    color: white;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .des p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 20px;
+    word-wrap: break-word;
+  }
+  .artist-like-2 {
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 3vw;
+  }
+  .art {
+    margin: 5px 20px;
+  }
+  .art h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 3vw;
+    margin-bottom: 5px;
+  }
+  .art h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 6vw;
+    margin-bottom: 20px;
+  }
+  .part1-img {
+    width: 70vw;
   }
   .company-logo {
     flex-wrap: wrap !important;
@@ -522,87 +624,5 @@ ul {
     min-height: 300px;
     height: auto;
     position: relative;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .part1-display {
-    flex-direction: column !important;
-    align-items: center;
-  }
-  .part1-text h1 {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  .NFTtext {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-  .description {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin-top: 0px !important;
-    margin-bottom: 40px;
-    transform: scale(1.5);
-  }
-  .des-desktop {
-    display: none !important;
-  }
-  .desktop-ban {
-    background: url("../images/cards/section-join-community2.png") no-repeat;
-    background-size: cover;
-    width: 100%;
-    border-radius: 20px;
-    min-height: 300px;
-    height: auto;
-    position: relative;
-  }
-  .company-logo {
-    flex-wrap: wrap !important;
-    justify-content: center;
-    width: 100%;
-  }
-  .company-logo img {
-    min-width: 50px;
-    max-width: 110px;
-  }
-  .card-btn {
-    padding: 10px 45px;
-  }
-  .nft-img {
-    width: 300px;
-    margin: 0.5vw 0.5vw;
-  }
-  .sellNFT h1 {
-    font-size: 1.5rem;
-  }
-  .emp-name {
-    margin: 5px 5px;
-    width: 300px;
-  }
-  .navbar img {
-    height: 20px;
-  }
-  .cards h1 {
-    font-size: 1.5rem;
-  }
-  .card-btn-s {
-    font-size: 14px;
-  }
-  .monkeycard {
-    min-width: 270px;
-  }
-  .hide {
-    display: none !important;
-  }
-  .show {
-    display: block !important;
-  }
-  .hamb {
-    transform: scale(1.5);
   }
 }

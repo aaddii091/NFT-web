@@ -12,14 +12,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 80px;
+  margin: 6% 5%;
+
+  height: 100%;
 }
 .navbar img {
   cursor: pointer;
+  height: 3vw;
 }
 .hamb {
   display: none;
   transform: scale(2);
+  color: whitesmoke;
 }
 ul li {
   list-style: none;
@@ -69,43 +73,71 @@ ul {
   }
 }
 /* PART-1 CSS */
+.part1 {
+  width: 100%;
+}
 .part1-display {
   display: flex;
   justify-content: space-between;
-  margin: 60px 80px;
+  margin: 6% 5%;
+  width: 80vw;
 }
-.part1-img img {
-  height: 30rem;
+.part1-img {
+  width: 40vw;
+}
+.part1-img-ratio img {
+  width: 100%;
 }
 .part1-text {
   margin: 0px 0px 0px 0px;
+  width: 100%;
 }
 .NFTtext {
-  width: auto;
-  height: 35vh;
+  width: 75%;
+  height: auto;
 }
 .artist {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  width: 60%;
+}
+.artist img {
 }
 .description {
+  width: 100%;
   margin-top: 20px;
+}
+.description img {
+  width: 70%;
 }
 /* Brand Company  */
 .brandCompany {
-  margin: 60px 80px;
+  margin: 6% 5%;
 }
 .company-logo {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+.company-logo img {
+  width: 100%;
+}
+.comp-logo-ratio {
+  margin: 0% 5%;
 }
 /* CARDS */
+.cards-btns {
+  display: flex;
+  overflow-x: auto;
+}
+.btn-overflow {
+}
 .cards {
-  margin: 20px 80px;
+  margin: 20px 5%;
 }
 .cards h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -114,14 +146,16 @@ ul {
 }
 .card-btn-s {
   padding: 12px 30px;
+  /* padding: 1vw 2.2vw; */
   border-radius: 20px;
   background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
   border: 0px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  /* font-size: 1.2vw; */
+  font-size: 2vw;
+  /* line-height: 19px; */
   color: whitesmoke;
   cursor: pointer;
   margin: 20px 20px 20px 0px;
@@ -130,7 +164,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+.show {
+  display: none;
 }
 .monkeycard {
   margin: 10px 5px;
@@ -138,6 +175,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   width: 19vw;
+  min-width: 200px;
   height: auto;
   border: 1px solid pink;
   border-radius: 15px;
@@ -194,7 +232,7 @@ ul {
 .card-btn {
   margin: 10px auto;
   cursor: pointer;
-  padding: 12px 30px;
+  padding: 1vw 2.2vw;
   border-radius: 20px;
   background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
   border: 0px;
@@ -206,9 +244,12 @@ ul {
   color: whitesmoke;
   cursor: pointer;
 }
+.btn-display {
+  display: flex;
+}
 /* SELL NFT  */
 .sellNFT {
-  margin: 10px 80px;
+  margin: 10px 5%;
   display: flex;
   flex-direction: column;
 }
@@ -217,22 +258,22 @@ ul {
 
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 4vw;
   line-height: 58px;
   color: white;
-  margin-bottom: 25px;
-  margin-top: 15px;
+  margin-bottom: 2vw;
+  margin-top: 1.5vw;
 }
 .frames {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 1vw;
 }
 .nft-img {
   width: 27vw;
-  margin: 5px 5px;
+  margin: 0.5vw 0.5vw;
 }
 .nft-img img {
   width: 100%;
@@ -250,6 +291,13 @@ ul {
   justify-content: space-around;
   align-items: center;
 }
+/* BANNER */
+.banner {
+  width: 100%;
+}
+.banner-ratio img {
+  width: 100%;
+}
 /* Joint Banner  */
 .joint-banner {
   margin: 10px auto;
@@ -262,7 +310,7 @@ ul {
 }
 /* Footer  */
 .footer-main {
-  margin: 10px 80px;
+  margin: 6% 5%;
 }
 .footer-main hr {
   opacity: 0.4;
@@ -280,4 +328,151 @@ ul {
   color: #ffffff5e;
   font-family: "Inter", sans-serif;
   margin-top: 10px;
+}
+/* MEDIA QUERY */
+@media only screen and (max-width: 475px) {
+  .part1-display {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .part1-text h1 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .NFTtext {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .description {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 0px !important;
+    margin-bottom: 40px;
+    transform: scale(1.5);
+  }
+  .des-desktop {
+    display: none !important;
+  }
+  .company-logo {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    width: 100%;
+  }
+  .company-logo img {
+    min-width: 50px;
+    max-width: 110px;
+  }
+  .card-btn {
+    padding: 10px 45px;
+  }
+  .nft-img {
+    width: 300px;
+    margin: 0.5vw 0.5vw;
+  }
+  .sellNFT h1 {
+    font-size: 1.5rem;
+  }
+  .emp-name {
+    margin: 5px 5px;
+    width: 300px;
+  }
+  .navbar img {
+    height: 20px;
+  }
+  .cards h1 {
+    font-size: 1.5rem;
+  }
+  .card-btn-s {
+    font-size: 14px;
+  }
+  .monkeycard {
+    min-width: 270px;
+  }
+  .hide {
+    display: none !important;
+  }
+  .show {
+    display: block !important;
+  }
+  .hamb {
+    transform: scale(1.5);
+  }
+}
+@media only screen and (max-width: 375px) {
+  .part1-display {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .part1-text h1 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .NFTtext {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .description {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-top: 0px !important;
+    margin-bottom: 40px;
+    transform: scale(1.5);
+  }
+  .des-desktop {
+    display: none !important;
+  }
+  .company-logo {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    width: 100%;
+  }
+  .company-logo img {
+    min-width: 50px;
+    max-width: 110px;
+  }
+  .card-btn {
+    padding: 10px 45px;
+  }
+  .nft-img {
+    width: 300px;
+    margin: 0.5vw 0.5vw;
+  }
+  .sellNFT h1 {
+    font-size: 1.5rem;
+  }
+  .emp-name {
+    margin: 5px 5px;
+    width: 300px;
+  }
+  .navbar img {
+    height: 20px;
+  }
+  .cards h1 {
+    font-size: 1.5rem;
+  }
+  .card-btn-s {
+    font-size: 14px;
+  }
+  .monkeycard {
+    min-width: 270px;
+  }
+  .hide {
+    display: none !important;
+  }
+  .show {
+    display: block !important;
+  }
+  .hamb {
+    transform: scale(1.5);
+  }
 }

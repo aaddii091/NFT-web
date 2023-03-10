@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 6% 5%;
+  margin: 2% 5%;
 
   height: 100%;
 }
@@ -151,25 +151,7 @@ ul {
   margin: 0px 0px 0px 0px;
   width: 100%;
 }
-.NFTtext {
-  width: 75%;
-  height: auto;
-}
-.artist {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  width: 60%;
-}
-.artist img {
-}
-.description {
-  width: 100%;
-  margin-top: 20px;
-}
-.description img {
-  width: 70%;
-}
+
 /* Brand Company  */
 .brandCompany {
   margin: 6% 5%;
@@ -189,8 +171,6 @@ ul {
 .cards-btns {
   display: flex;
   overflow-x: auto;
-}
-.btn-overflow {
 }
 .cards {
   margin: 20px 5%;
@@ -419,10 +399,18 @@ ul {
 }
 /* BANNER */
 .banner {
-  width: 100%;
+  width: 100vw;
+  overflow-x: auto;
 }
-.banner-ratio img {
-  width: 100%;
+
+.banner-ratio h1 {
+  font-size: 100px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 2px rgb(255, 253, 253);
+  background: linear-gradient(112.62deg, #8d1cfe 29.4%, #0038ed 105.15%);
 }
 /* Joint Banner  */
 .joint-banner {
@@ -438,7 +426,7 @@ ul {
   width: 100%;
 }
 .desktop-ban {
-  background: url("../images/cards/section-join-community.png") no-repeat;
+  background: url(./images/cards/section-join-community.png) no-repeat;
   background-size: cover;
   width: 100%;
   border-radius: 20px;
@@ -617,7 +605,7 @@ ul {
     transform: scale(1.5);
   }
   .desktop-ban {
-    background: url("../images/cards/section-join-community2.png") no-repeat;
+    background: url(./images/cards/section-join-community2.png) no-repeat;
     background-size: cover;
     width: 100%;
     border-radius: 20px;

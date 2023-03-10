@@ -84,15 +84,17 @@ ul {
 }
 .overflow {
   width: 100%;
+  overflow: hidden;
 }
 .gradient1 {
   position: absolute;
   width: 555px;
   height: 555px;
+  overflow: hidden;
   left: 927px;
   top: 270vh;
   z-index: -9;
-
+  overflow: hidden;
   background: rgba(214, 34, 218, 0.59);
   filter: blur(247px);
 }
